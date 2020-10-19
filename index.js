@@ -23,6 +23,7 @@ img.onload=function(){
 }
 
 const updateImage = index => {
+  context.clearRect(0, 0, canvas.width, canvas.height);
   img.src = currentFrame(index);
   context.drawImage(img, 0, 0);
 }
